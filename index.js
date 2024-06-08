@@ -62,7 +62,7 @@ app.post('/event', (req, res) => {
         res.status(400).send('Invalid event type');
     }
 });
-
+//teste
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
