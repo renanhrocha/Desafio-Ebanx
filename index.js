@@ -7,6 +7,11 @@ app.use(express.json());
 
 let accounts = {};
 
+// Rota principal para exibir "hello ebanx"
+app.get('/', (req, res) => {
+    res.send('hello ebanx');
+});
+
 // Reset endpoint
 app.post('/reset', (req, res) => {
     accounts = {};
